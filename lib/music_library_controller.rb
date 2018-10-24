@@ -27,7 +27,6 @@ class MusicLibraryController
       song.name
     end
     sorted_song_list.uniq.each_with_index {|song, index| puts "#{index + 1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"}
-    sorted_song_list
   end
 
   def list_artists
